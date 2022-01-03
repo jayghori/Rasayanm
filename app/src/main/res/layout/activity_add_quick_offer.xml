@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuickOfferActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="6dp"
+        android:elevation="30dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/black_acho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="18dp"
+        android:layout_margin="12dp"
+        android:layout_height="360dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:padding="2dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="Title"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/edtTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/edttitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Stock Available"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/tvStockAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tvStockAvailable"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="0.0"
+                android:id="@+id/edtStock"
+                android:inputType="phone"
+                android:layout_weight="1"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/spinQuality"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_height="50dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/spinGrade"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="Discuption"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/edtDiscuption"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/edtDiscuption"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_weight="1"
+                android:id="@+id/tvUrl"
+                android:hint="File Upload"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="select"
+                android:id="@+id/btnSelect"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvLocation"
+            android:hint="Location"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+            android:layout_height="wrap_content">
+
+            <EditText
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="150dp"
+                android:hint="₹ Offer Price "
+                android:inputType="phone"
+                android:id="@+id/edtPrice"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_weight="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/spinQyality1"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:id="@+id/btnSubmit"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:id="@+id/tvLocality"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:id="@+id/tvCountryName"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

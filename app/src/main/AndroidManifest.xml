@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rasayanm">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appplogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rasayanm">
+        <activity android:name=".TwitterActivity"></activity>
+        <activity android:name=".LinkedInActivity" />
+        <activity android:name=".PintrestActivity" />
+        <activity android:name=".QuoraActivity" />
+        <activity android:name=".TeligramActivity" />
+        <activity android:name=".InstagramActivity" />
+        <activity android:name=".FacebookActivity" />
+        <activity android:name=".WhatappActivity" />
+        <activity android:name=".YouTubeActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityRFQDetail" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AddYourStoreActivity" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".PriceListDetail"
+            android:parentActivityName=".PriceListActivity" />
+        <activity
+            android:name=".NoticeBoardDetail"
+            android:parentActivityName=".NoticeBoardActivity" />
+        <activity
+            android:name=".ActivityOfferDetail"
+            android:parentActivityName=".QuickOfferActivity" />
+        <activity
+            android:name=".AddPriceListActivity"
+            android:parentActivityName=".PriceListActivity" />
+        <activity
+            android:name=".AddNoticeBoardActivity"
+            android:parentActivityName=".NoticeBoardActivity" />
+        <activity
+            android:name=".AddQuickOfferActivity"
+            android:parentActivityName=".QuickOfferActivity" />
+        <activity
+            android:name=".AddRFQActivity"
+            android:parentActivityName=".RFQActivity" />
+        <activity
+            android:name=".FoundationActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DocumentActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RFQActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PriceListActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".QuickOfferActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NoticeBoardActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".JobActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FindyActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RasayanmActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

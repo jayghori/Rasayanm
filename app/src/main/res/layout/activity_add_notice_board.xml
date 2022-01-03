@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoticeBoardActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="6dp"
+        android:elevation="30dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/black_acho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="18dp"
+        android:layout_margin="12dp"
+        android:layout_height="360dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_height="wrap_content">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:hint="Titile"
+               android:id="@+id/edtTitle"
+               android:textColor="@color/black"
+               android:fontFamily="sans-serif-medium"
+               android:textColorHint="@color/black"
+               android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spinCategory"
+                android:layout_gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Discription"
+                android:id="@+id/edtDiscuption"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/linearLayout1"
+                app:layout_constraintTop_toBottomOf="@+id/edtDiscuption"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="File Upload"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/tvUrl"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="select"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnSelect"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/edtLink"
+                android:hint="Link"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="submit"
+                android:id="@+id/btnSubmit"
+                android:textAllCaps="false"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/edtLink"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
